@@ -36,6 +36,7 @@ default['newrelic']['server_monitoring']['other_options'] = {}
 
 # application monitoring
 default['newrelic']['application_monitoring']['enabled'] = nil
+default['newrelic']['application_monitoring']['enable_auto_transaction_naming'] = nil
 default['newrelic']['application_monitoring']['logfile'] = nil
 default['newrelic']['application_monitoring']['logfile_path'] = nil
 default['newrelic']['application_monitoring']['loglevel'] = nil

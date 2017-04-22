@@ -14,6 +14,7 @@ newrelic_agent_java 'Install' do
   template_source node['newrelic']['java_agent']['template_source'] unless node['newrelic']['java_agent']['template_source'].nil?
   enable_custom_tracing node['newrelic']['java_agent']['enable_custom_tracing'] unless node['newrelic']['java_agent']['enable_custom_tracing'].nil?
   enabled node['newrelic']['application_monitoring']['enabled'] unless node['newrelic']['application_monitoring']['enabled'].nil?
+  enable_auto_transaction_naming node['newrelic']['application_monitoring']['enable_auto_transaction_naming'] unless node['newrelic']['application_monitoring']['enable_auto_transaction_naming'].nil?
   app_name node['newrelic']['application_monitoring']['app_name'] unless node['newrelic']['application_monitoring']['app_name'].nil?
   high_security NewRelic.to_boolean(node['newrelic']['application_monitoring']['high_security']) unless node['newrelic']['application_monitoring']['high_security'].nil?
   app_user node['newrelic']['java_agent']['app_user'] unless node['newrelic']['java_agent']['app_user'].nil?

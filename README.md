@@ -414,6 +414,7 @@ The `newrelic_agent_java` resource will handle the requirements to install java 
 #### Advanced parameters
 
 * `'enabled'` - Defaults to true
+* `'enable_auto_transaction_naming'` - Defaults to true
 * `'high_security'` - Defaults to false
 * `'owner'` - Defaults to 'newrelic'
 * `'group'` - Defaults to 'newrelic'
