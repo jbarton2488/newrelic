@@ -20,7 +20,7 @@ attribute :template_cookbook, :kind_of => String, :default => 'newrelic'
 attribute :template_source, :kind_of => String, :default => 'agent/newrelic.yml.erb'
 
 attribute :enabled, :kind_of => [TrueClass, FalseClass], :default => true
-attribute :enable_auto_transaction_naming, :kind_of => [TrueClass, FalseClass], :defualt => true
+attribute :enable_auto_transaction_naming, :kind_of => [TrueClass, FalseClass], :default => true
 attribute :app_name, :kind_of => String, :default => nil
 attribute :high_security, :kind_of => [TrueClass, FalseClass], :default => false
 attribute :logfile, :kind_of => String, :default => nil
